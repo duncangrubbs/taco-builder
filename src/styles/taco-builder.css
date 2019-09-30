@@ -1,0 +1,50 @@
+#taco-builder {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.scrolling-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+  overflow-x: scroll;
+  
+  margin: 8px 0;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  padding: 8px;
+  margin: 0 8px 0 0;
+  
+  min-width: 180px;
+  min-height: 80px;
+  
+  border: 2px solid var(--app-primary-color);
+  border-radius: var(--app-border-radius);
+
+  font-size: 1.2em;
+  font-weight: 700;
+
+  transition: all ease .2s;
+}
+
+.ingredient:hover {
+  color: white;
+  background: var(--app-accent-color);
+
+  cursor: pointer;
+}
+
+.ingredient__selected {
+  background: var(--app-accent-color);
+  color: #FFF;
+}

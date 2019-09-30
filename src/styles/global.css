@@ -1,0 +1,71 @@
+:root {
+  --app-primary-color: #2195f2;
+  --app-secondary-color: #ec9a2c;
+  --app-accent-color: #e6506b;
+  --app-primary-text-color: #222;
+  --app-secondary-text-color: #444;
+  --app-border-radius: 4px;
+  --app-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--app-primary-text-color);
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus { outline:0; }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+}
+
+.header-1 {
+  font-size: 2em;
+  margin: 8px 0;
+}
+
+.header-2 {
+  font-size: 1.3em;
+  margin: 8px 0;
+}
+
+.header-3 {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+
+.button--standard {
+  align-self: flex-end;
+
+  border: none;
+  border-radius: var(--app-border-radius);
+
+  background: var(--app-secondary-color);
+  color: #FFF;
+  
+  height: 48px;
+  min-width: 96px;
+  margin: 4px;
+  padding: 0 16px;
+  
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button--standard:hover {
+  box-shadow: var(--app-shadow);
+}

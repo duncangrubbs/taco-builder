@@ -1,0 +1,17 @@
+.taco {
+  display: flex;
+  align-items: center;
+
+  padding: 16px;
+  margin: 8px 0;
+  
+  min-height: 36px;
+  
+  border-radius: var(--app-border-radius);
+  box-shadow: var(--app-shadow);
+
+  background: var(--app-primary-color);
+  color: #FFF;
+  font-size: 1.4em;
+  font-weight: 600;
+}
